@@ -1,0 +1,48 @@
+# depslib dependency file v1.0
+1684521438 source:f:\programming languages\c++\carrental\src\admin.cpp
+	"Admin.h"
+
+1684527128 f:\programming languages\c++\carrental\include\admin.h
+	<iostream>
+	<string>
+
+1684181427 source:f:\programming languages\c++\carrental\src\car.cpp
+	"Car.h"
+
+1684177833 f:\programming languages\c++\carrental\include\car.h
+	<iostream>
+	<string>
+
+1684527128 source:f:\programming languages\c++\carrental\src\customer.cpp
+	"Customer.h"
+
+1684527128 f:\programming languages\c++\carrental\include\customer.h
+	<iostream>
+	<string>
+	<Admin.h>
+
+1684517889 source:f:\programming languages\c++\carrental\src\invoice.cpp
+	"Invoice.h"
+
+1684528100 f:\programming languages\c++\carrental\include\invoice.h
+	"Reservation.h"
+
+1684490315 source:f:\programming languages\c++\carrental\src\reservation.cpp
+	"Reservation.h"
+
+1684512772 f:\programming languages\c++\carrental\include\reservation.h
+	<iostream>
+	<string>
+	"Car.h"
+
+1684527656 source:f:\programming languages\c++\carrental\main.cpp
+	<iostream>
+	"Car.h"
+	"Customer.h"
+	"Reservation.h"
+	"Admin.h"
+	"Invoice.h"
+	<stdlib.h>
+	<conio.h>
+	<windows.h>
+

@@ -1,0 +1,121 @@
+#include <iostream>
+#include"Car.h"
+#include"Customer.h"
+#include"Reservation.h"
+#include"Admin.h"
+#include"Invoice.h"
+using namespace std;
+
+int main()
+{
+    Admin op;
+    Car op1;
+    Reservation op2;
+    long a,b,c,d,e,f,g;//price for each car
+    long a1,b1,c1,d1,e1,f1,g1;//number available for all car
+    cout<<"\n\n\t\t\t^^^^^^^^^^^^^^^^^^^^"<<endl;
+    cout<<"\t\t\t Car Rental System "<<endl;
+    cout<<"\t\t\t********************"<<endl;
+
+    char x;
+    cout<<"Are You right admin (y or n)?";
+    cin>>x;
+    if(x=='y'|| x=='Y')
+    {
+        op.stAdmin();
+        cout<<"\n\nEnter the rental price for each car and the available number..."<<endl;
+        cout<<"\n   2020 Hyundai Kona"<<endl;
+        cout<<" price: ";
+        cin>>a;
+        cout<<"\n Number available: ";
+        cin>>a1;
+        cout<<"===================";
+        cout<<"\n   2023 Ford Escape"<<endl;
+        cout<<" price: ";
+        cin>>b;
+        cout<<"\n Number available: ";
+        cin>>b1;
+        cout<<"===================";
+        cout<<"\n   2022 Toyota GR86"<<endl;
+        cout<<" price: ";
+        cin>>c;
+        cout<<"\n Number available: ";
+        cin>>c1;
+        cout<<"===================";
+        cout<<"\n   2017 Jeep Patriot"<<endl;
+        cout<<" price: ";
+        cin>>d;
+        cout<<"\n Number available: ";
+        cin>>d1;
+        cout<<"===================";
+        cout<<"\n   2022 Chevrolet  Malibu"<<endl;
+        cout<<" price: ";
+        cin>>e;
+        cout<<"\n Number available: ";
+        cin>>e1;
+        cout<<"===================";
+        cout<<"\n   2023 Mazda CX-5"<<endl;
+        cout<<" price: ";
+        cin>>f;
+        cout<<"\n Number available: ";
+        cin>>f1;
+        cout<<"===================";
+        cout<<"\n   2019 Hyundai Nexo"<<endl;
+        cout<<" price: ";
+        cin>>g;
+        cout<<"\n Number available: ";
+        cin>>g1;
+        cout<<"===================";
+
+    }
+    ///
+    Invoice k;
+    Invoice k1(a);
+    Invoice k2(b);
+    Invoice k3(c);
+    Invoice k4(d);
+    Invoice k5(e);
+    Invoice k6(f);
+    Invoice k7(g);
+
+    char j;
+    do
+    {
+        cout<<"Are you want to add a new customer(y or n)? ";
+        cin>>j;
+        cout<<endl;
+        cout<<"Welcome,dear customer,to your company\x03..."<<endl;
+        op1.displayCars();
+        op2.setCar();
+        op2.setDay();
+        k.setCustomer();
+        cout<<"\tDear customer, your bill\x02"<<endl;
+        switch(op2.Ncar)
+        {
+        case 1:
+            if(a1>0)
+            {
+               // k1.getCustomer();
+              //  op2.getCar();
+               // k=k1*9;
+           //     cout<<"taxes: "<<k<<endl;
+               // k=k1*1.2;
+             //   cout<<"total: "<<k;
+                break;
+            }
+
+        }
+
+
+
+
+
+    }
+    while(j=='y'||j=='Y');
+
+
+
+
+
+    return 0;
+}
